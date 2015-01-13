@@ -21,7 +21,9 @@ gem 'activerecord', '>= 3.1', :require => 'active_record'
 
 gem 'mysql2', group: :development
 
-gem 'pg', group: :production
+group :production do
+  gem 'pg'
+end
 
 # Test requirements
 gem 'shoulda', :group => 'test'
