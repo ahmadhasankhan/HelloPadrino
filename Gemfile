@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2.0'
 # Distribute your app as a gem
 # gemspec
 
@@ -18,7 +18,10 @@ gem 'bcrypt'
 gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'mysql2'
+
+gem 'mysql2', group: :development
+
+gem 'pg', group: :production
 
 # Test requirements
 gem 'shoulda', :group => 'test'
